@@ -16,18 +16,18 @@ import com.pages.HomePage;
 import com.pages.SearchResultsPage;
 
 public class PlaceOrderTest extends BaseTest {
-
-	@BeforeTest
-	public void setUp() {
-		initialize();
-	}
-
+	
 	HomePage homepage;
 	SearchResultsPage searchresultspage;
 	AddToCartpage addtocartpage;
 	CheckoutPage checkoutpage;
 	BuyPage buypage;	
 	WebDriverWait wait;
+
+	@BeforeTest
+	public void setUp() {
+		initialize();
+	}
 
 	@Test(priority = 1)
 	public void searchProduct() {
